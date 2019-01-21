@@ -1,0 +1,23 @@
+//
+//  PrefixHeaderMVC_MVP_MVVM.pch
+//  RFMVC_MVP_MVVM
+//
+//  Created by riceFun on 2019/1/2.
+//  Copyright © 2019 riceFun. All rights reserved.
+//
+
+#ifndef PrefixHeaderMVC_MVP_MVVM_pch
+#define PrefixHeaderMVC_MVP_MVVM_pch
+
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <Masonry/Masonry.h>
+
+#import "RFNetWorkManager.h"
+
+#import "UserInfo.h"
+#import "Draft.h"
+#import "Blog.h"
+
+#define USER_SELF_ID @"100"
+
+#endif /* PrefixHeaderMVC_MVP_MVVM_pch */

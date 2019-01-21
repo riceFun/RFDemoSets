@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2116B4A021C23F17007C9DAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B49F21C23F17007C9DAF /* AppDelegate.m */; };
+		2116B4A321C23F17007C9DAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4A221C23F17007C9DAF /* ViewController.m */; };
+		2116B4A621C23F17007C9DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2116B4A421C23F17007C9DAF /* Main.storyboard */; };
+		2116B4A921C23F17007C9DAF /* RFRuntimeDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4A721C23F17007C9DAF /* RFRuntimeDemo.xcdatamodeld */; };
+		2116B4AB21C23F20007C9DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2116B4AA21C23F20007C9DAF /* Assets.xcassets */; };
+		2116B4AE21C23F20007C9DAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2116B4AC21C23F20007C9DAF /* LaunchScreen.storyboard */; };
+		2116B4B121C23F20007C9DAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4B021C23F20007C9DAF /* main.m */; };
+		2116B4BB21C23F20007C9DAF /* RFRuntimeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4BA21C23F20007C9DAF /* RFRuntimeDemoTests.m */; };
+		2116B4C621C23F20007C9DAF /* RFRuntimeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4C521C23F20007C9DAF /* RFRuntimeDemoUITests.m */; };
+		2116B4D921C24050007C9DAF /* ObjcGetSetClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4D821C24050007C9DAF /* ObjcGetSetClassViewController.m */; };
+		2116B4DC21C24B93007C9DAF /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4DB21C24B93007C9DAF /* Animal.m */; };
+		2116B4E121C3423C007C9DAF /* SimpleFunctionSetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4E021C3423C007C9DAF /* SimpleFunctionSetsViewController.m */; };
+		2116B4E421C34A4E007C9DAF /* Pig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4E321C34A4E007C9DAF /* Pig.m */; };
+		2116B4E821C3781F007C9DAF /* ComplexFuncSetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4E721C3781F007C9DAF /* ComplexFuncSetsViewController.m */; };
+		2116B4EC21C384D4007C9DAF /* Object_setIvarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4EB21C384D3007C9DAF /* Object_setIvarViewController.m */; };
+		2116B4EF21C389AC007C9DAF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4EE21C389AC007C9DAF /* Person.m */; };
+		2116B4F621C39506007C9DAF /* Objc_getClassList_copyClassListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4F521C39506007C9DAF /* Objc_getClassList_copyClassListViewController.m */; };
+		2116B4FA21C39962007C9DAF /* Class_getInstanceSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4F921C39962007C9DAF /* Class_getInstanceSizeViewController.m */; };
+		2116B4FD21C39C58007C9DAF /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4FC21C39C58007C9DAF /* Son.m */; };
+		2116B50021C39F88007C9DAF /* LittlePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B4FF21C39F88007C9DAF /* LittlePerson.m */; };
+		2116B50421C3AA9F007C9DAF /* SelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2116B50321C3AA9F007C9DAF /* SelectorViewController.m */; };
+		21C69A2E21C789F400499D3C /* Class_copyMethodListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C69A2D21C789F400499D3C /* Class_copyMethodListViewController.m */; };
+		21C69A3221C78E9F00499D3C /* ProtocolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C69A3121C78E9F00499D3C /* ProtocolViewController.m */; };
+		21C69A3521C7949A00499D3C /* RFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C69A3421C7949A00499D3C /* RFTableViewController.m */; };
+		21C69A3921C79BEF00499D3C /* PropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C69A3821C79BEF00499D3C /* PropertyViewController.m */; };
+		21C69A3D21C7AB5400499D3C /* IvarLayout_WeakIvarLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C69A3C21C7AB5400499D3C /* IvarLayout_WeakIvarLayoutViewController.m */; };
+		21C69A4021C7AF8800499D3C /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C69A3F21C7AF8800499D3C /* Dog.m */; };
+		642860FA564BB2CD81066DEA /* libPods-RFRuntimeDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED80269AB6E609FE92FF705E /* libPods-RFRuntimeDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2116B4B721C23F20007C9DAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2116B49321C23F17007C9DAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2116B49A21C23F17007C9DAF;
+			remoteInfo = RFRuntimeDemo;
+		};
+		2116B4C221C23F20007C9DAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2116B49321C23F17007C9DAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2116B49A21C23F17007C9DAF;
+			remoteInfo = RFRuntimeDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2116B49B21C23F17007C9DAF /* RFRuntimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFRuntimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2116B49E21C23F17007C9DAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2116B49F21C23F17007C9DAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2116B4A121C23F17007C9DAF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2116B4A221C23F17007C9DAF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2116B4A521C23F17007C9DAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2116B4A821C23F17007C9DAF /* RFRuntimeDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RFRuntimeDemo.xcdatamodel; sourceTree = "<group>"; };
+		2116B4AA21C23F20007C9DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2116B4AD21C23F20007C9DAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2116B4AF21C23F20007C9DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2116B4B021C23F20007C9DAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2116B4B621C23F20007C9DAF /* RFRuntimeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFRuntimeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2116B4BA21C23F20007C9DAF /* RFRuntimeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFRuntimeDemoTests.m; sourceTree = "<group>"; };
+		2116B4BC21C23F20007C9DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2116B4C121C23F20007C9DAF /* RFRuntimeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFRuntimeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2116B4C521C23F20007C9DAF /* RFRuntimeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFRuntimeDemoUITests.m; sourceTree = "<group>"; };
+		2116B4C721C23F20007C9DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2116B4D721C24050007C9DAF /* ObjcGetSetClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcGetSetClassViewController.h; sourceTree = "<group>"; };
+		2116B4D821C24050007C9DAF /* ObjcGetSetClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcGetSetClassViewController.m; sourceTree = "<group>"; };
+		2116B4DA21C24B93007C9DAF /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		2116B4DB21C24B93007C9DAF /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		2116B4DF21C3423C007C9DAF /* SimpleFunctionSetsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleFunctionSetsViewController.h; sourceTree = "<group>"; };
+		2116B4E021C3423C007C9DAF /* SimpleFunctionSetsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleFunctionSetsViewController.m; sourceTree = "<group>"; };
+		2116B4E221C34A4E007C9DAF /* Pig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pig.h; sourceTree = "<group>"; };
+		2116B4E321C34A4E007C9DAF /* Pig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pig.m; sourceTree = "<group>"; };
+		2116B4E621C3781F007C9DAF /* ComplexFuncSetsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplexFuncSetsViewController.h; sourceTree = "<group>"; };
+		2116B4E721C3781F007C9DAF /* ComplexFuncSetsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplexFuncSetsViewController.m; sourceTree = "<group>"; };
+		2116B4EA21C384D3007C9DAF /* Object_setIvarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Object_setIvarViewController.h; sourceTree = "<group>"; };
+		2116B4EB21C384D3007C9DAF /* Object_setIvarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Object_setIvarViewController.m; sourceTree = "<group>"; };
+		2116B4ED21C389AC007C9DAF /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		2116B4EE21C389AC007C9DAF /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		2116B4F421C39506007C9DAF /* Objc_getClassList_copyClassListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objc_getClassList_copyClassListViewController.h; sourceTree = "<group>"; };
+		2116B4F521C39506007C9DAF /* Objc_getClassList_copyClassListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Objc_getClassList_copyClassListViewController.m; sourceTree = "<group>"; };
+		2116B4F821C39962007C9DAF /* Class_getInstanceSizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class_getInstanceSizeViewController.h; sourceTree = "<group>"; };
+		2116B4F921C39962007C9DAF /* Class_getInstanceSizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class_getInstanceSizeViewController.m; sourceTree = "<group>"; };
+		2116B4FB21C39C58007C9DAF /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		2116B4FC21C39C58007C9DAF /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		2116B4FE21C39F88007C9DAF /* LittlePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LittlePerson.h; sourceTree = "<group>"; };
+		2116B4FF21C39F88007C9DAF /* LittlePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LittlePerson.m; sourceTree = "<group>"; };
+		2116B50221C3AA9F007C9DAF /* SelectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectorViewController.h; sourceTree = "<group>"; };
+		2116B50321C3AA9F007C9DAF /* SelectorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectorViewController.m; sourceTree = "<group>"; };
+		21C69A2C21C789F400499D3C /* Class_copyMethodListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class_copyMethodListViewController.h; sourceTree = "<group>"; };
+		21C69A2D21C789F400499D3C /* Class_copyMethodListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class_copyMethodListViewController.m; sourceTree = "<group>"; };
+		21C69A3021C78E9F00499D3C /* ProtocolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolViewController.h; sourceTree = "<group>"; };
+		21C69A3121C78E9F00499D3C /* ProtocolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolViewController.m; sourceTree = "<group>"; };
+		21C69A3321C7949A00499D3C /* RFTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFTableViewController.h; sourceTree = "<group>"; };
+		21C69A3421C7949A00499D3C /* RFTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFTableViewController.m; sourceTree = "<group>"; };
+		21C69A3721C79BEF00499D3C /* PropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyViewController.h; sourceTree = "<group>"; };
+		21C69A3821C79BEF00499D3C /* PropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyViewController.m; sourceTree = "<group>"; };
+		21C69A3B21C7AB5400499D3C /* IvarLayout_WeakIvarLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IvarLayout_WeakIvarLayoutViewController.h; sourceTree = "<group>"; };
+		21C69A3C21C7AB5400499D3C /* IvarLayout_WeakIvarLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IvarLayout_WeakIvarLayoutViewController.m; sourceTree = "<group>"; };
+		21C69A3E21C7AF8800499D3C /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		21C69A3F21C7AF8800499D3C /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		86DB16F0D54D4F273B464539 /* Pods-RFRuntimeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFRuntimeDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-RFRuntimeDemo/Pods-RFRuntimeDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DE70DCC96C39FA1CEB9AF83F /* Pods-RFRuntimeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFRuntimeDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-RFRuntimeDemo/Pods-RFRuntimeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		ED80269AB6E609FE92FF705E /* libPods-RFRuntimeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RFRuntimeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2116B49821C23F17007C9DAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642860FA564BB2CD81066DEA /* libPods-RFRuntimeDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2116B4B321C23F20007C9DAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2116B4BE21C23F20007C9DAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2116B49221C23F17007C9DAF = {
+			isa = PBXGroup;
+			children = (
+				2116B49D21C23F17007C9DAF /* RFRuntimeDemo */,
+				2116B4B921C23F20007C9DAF /* RFRuntimeDemoTests */,
+				2116B4C421C23F20007C9DAF /* RFRuntimeDemoUITests */,
+				2116B49C21C23F17007C9DAF /* Products */,
+				FFCE0763323F7F69F72A5511 /* Pods */,
+				BABDB75F964291C5476C4A08 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2116B49C21C23F17007C9DAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2116B49B21C23F17007C9DAF /* RFRuntimeDemo.app */,
+				2116B4B621C23F20007C9DAF /* RFRuntimeDemoTests.xctest */,
+				2116B4C121C23F20007C9DAF /* RFRuntimeDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2116B49D21C23F17007C9DAF /* RFRuntimeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				21C69A3A21C7AB1000499D3C /* class_getIvarLayout_class_getWeakIvarLayout */,
+				21C69A3621C79BDB00499D3C /* Property */,
+				21C69A2F21C78E9300499D3C /* Protocol */,
+				21C69A2B21C789D700499D3C /* Class_copyMethodList */,
+				2116B50121C3AA8C007C9DAF /* Selector */,
+				2116B4F721C39944007C9DAF /* Class_getInstanceSize  */,
+				2116B4F021C39330007C9DAF /* objc_getClassList_objc_copyClassList */,
+				2116B4E921C384BD007C9DAF /* object_setIvar */,
+				2116B4E521C377C4007C9DAF /* ComplexFuncSets */,
+				2116B4DE21C341FE007C9DAF /* simpleFunctionSets */,
+				2116B4D321C23FEB007C9DAF /* object_getClass_ object_setClass */,
+				2116B49E21C23F17007C9DAF /* AppDelegate.h */,
+				2116B49F21C23F17007C9DAF /* AppDelegate.m */,
+				2116B4A121C23F17007C9DAF /* ViewController.h */,
+				2116B4A221C23F17007C9DAF /* ViewController.m */,
+				2116B4A421C23F17007C9DAF /* Main.storyboard */,
+				2116B4AA21C23F20007C9DAF /* Assets.xcassets */,
+				2116B4AC21C23F20007C9DAF /* LaunchScreen.storyboard */,
+				2116B4AF21C23F20007C9DAF /* Info.plist */,
+				2116B4B021C23F20007C9DAF /* main.m */,
+				2116B4A721C23F17007C9DAF /* RFRuntimeDemo.xcdatamodeld */,
+			);
+			path = RFRuntimeDemo;
+			sourceTree = "<group>";
+		};
+		2116B4B921C23F20007C9DAF /* RFRuntimeDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2116B4BA21C23F20007C9DAF /* RFRuntimeDemoTests.m */,
+				2116B4BC21C23F20007C9DAF /* Info.plist */,
+			);
+			path = RFRuntimeDemoTests;
+			sourceTree = "<group>";
+		};
+		2116B4C421C23F20007C9DAF /* RFRuntimeDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2116B4C521C23F20007C9DAF /* RFRuntimeDemoUITests.m */,
+				2116B4C721C23F20007C9DAF /* Info.plist */,
+			);
+			path = RFRuntimeDemoUITests;
+			sourceTree = "<group>";
+		};
+		2116B4D321C23FEB007C9DAF /* object_getClass_ object_setClass */ = {
+			isa = PBXGroup;
+			children = (
+				2116B4D721C24050007C9DAF /* ObjcGetSetClassViewController.h */,
+				2116B4D821C24050007C9DAF /* ObjcGetSetClassViewController.m */,
+				2116B4DA21C24B93007C9DAF /* Animal.h */,
+				2116B4DB21C24B93007C9DAF /* Animal.m */,
+			);
+			path = "object_getClass_ object_setClass";
+			sourceTree = "<group>";
+		};
+		2116B4DE21C341FE007C9DAF /* simpleFunctionSets */ = {
+			isa = PBXGroup;
+			children = (
+				2116B4DF21C3423C007C9DAF /* SimpleFunctionSetsViewController.h */,
+				2116B4E021C3423C007C9DAF /* SimpleFunctionSetsViewController.m */,
+				2116B4E221C34A4E007C9DAF /* Pig.h */,
+				2116B4E321C34A4E007C9DAF /* Pig.m */,
+			);
+			path = simpleFunctionSets;
+			sourceTree = "<group>";
+		};
+		2116B4E521C377C4007C9DAF /* ComplexFuncSets */ = {
+			isa = PBXGroup;
+			children = (
+				2116B4E621C3781F007C9DAF /* ComplexFuncSetsViewController.h */,
+				2116B4E721C3781F007C9DAF /* ComplexFuncSetsViewController.m */,
+			);
+			path = ComplexFuncSets;
+			sourceTree = "<group>";
+		};
+		2116B4E921C384BD007C9DAF /* object_setIvar */ = {
+			isa = PBXGroup;
+			children = (
+				2116B4EA21C384D3007C9DAF /* Object_setIvarViewController.h */,
+				2116B4EB21C384D3007C9DAF /* Object_setIvarViewController.m */,
+				2116B4ED21C389AC007C9DAF /* Person.h */,
+				2116B4EE21C389AC007C9DAF /* Person.m */,
+			);
+			path = object_setIvar;
+			sourceTree = "<group>";
+		};
+		2116B4F021C39330007C9DAF /* objc_getClassList_objc_copyClassList */ = {
+			isa = PBXGroup;
+			children = (
+				2116B4F421C39506007C9DAF /* Objc_getClassList_copyClassListViewController.h */,
+				2116B4F521C39506007C9DAF /* Objc_getClassList_copyClassListViewController.m */,
+			);
+			path = objc_getClassList_objc_copyClassList;
+			sourceTree = "<group>";
+		};
+		2116B4F721C39944007C9DAF /* Class_getInstanceSize  */ = {
+			isa = PBXGroup;
+			children = (
+				2116B4F821C39962007C9DAF /* Class_getInstanceSizeViewController.h */,
+				2116B4F921C39962007C9DAF /* Class_getInstanceSizeViewController.m */,
+				2116B4FE21C39F88007C9DAF /* LittlePerson.h */,
+				2116B4FF21C39F88007C9DAF /* LittlePerson.m */,
+				2116B4FB21C39C58007C9DAF /* Son.h */,
+				2116B4FC21C39C58007C9DAF /* Son.m */,
+			);
+			path = "Class_getInstanceSize ";
+			sourceTree = "<group>";
+		};
+		2116B50121C3AA8C007C9DAF /* Selector */ = {
+			isa = PBXGroup;
+			children = (
+				2116B50221C3AA9F007C9DAF /* SelectorViewController.h */,
+				2116B50321C3AA9F007C9DAF /* SelectorViewController.m */,
+			);
+			path = Selector;
+			sourceTree = "<group>";
+		};
+		21C69A2B21C789D700499D3C /* Class_copyMethodList */ = {
+			isa = PBXGroup;
+			children = (
+				21C69A2C21C789F400499D3C /* Class_copyMethodListViewController.h */,
+				21C69A2D21C789F400499D3C /* Class_copyMethodListViewController.m */,
+			);
+			path = Class_copyMethodList;
+			sourceTree = "<group>";
+		};
+		21C69A2F21C78E9300499D3C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				21C69A3021C78E9F00499D3C /* ProtocolViewController.h */,
+				21C69A3121C78E9F00499D3C /* ProtocolViewController.m */,
+				21C69A3321C7949A00499D3C /* RFTableViewController.h */,
+				21C69A3421C7949A00499D3C /* RFTableViewController.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		21C69A3621C79BDB00499D3C /* Property */ = {
+			isa = PBXGroup;
+			children = (
+				21C69A3721C79BEF00499D3C /* PropertyViewController.h */,
+				21C69A3821C79BEF00499D3C /* PropertyViewController.m */,
+			);
+			path = Property;
+			sourceTree = "<group>";
+		};
+		21C69A3A21C7AB1000499D3C /* class_getIvarLayout_class_getWeakIvarLayout */ = {
+			isa = PBXGroup;
+			children = (
+				21C69A3B21C7AB5400499D3C /* IvarLayout_WeakIvarLayoutViewController.h */,
+				21C69A3C21C7AB5400499D3C /* IvarLayout_WeakIvarLayoutViewController.m */,
+				21C69A3E21C7AF8800499D3C /* Dog.h */,
+				21C69A3F21C7AF8800499D3C /* Dog.m */,
+			);
+			path = class_getIvarLayout_class_getWeakIvarLayout;
+			sourceTree = "<group>";
+		};
+		BABDB75F964291C5476C4A08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED80269AB6E609FE92FF705E /* libPods-RFRuntimeDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFCE0763323F7F69F72A5511 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE70DCC96C39FA1CEB9AF83F /* Pods-RFRuntimeDemo.debug.xcconfig */,
+				86DB16F0D54D4F273B464539 /* Pods-RFRuntimeDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2116B49A21C23F17007C9DAF /* RFRuntimeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2116B4CA21C23F20007C9DAF /* Build configuration list for PBXNativeTarget "RFRuntimeDemo" */;
+			buildPhases = (
+				20E7952F5DEBB1412951A2BA /* [CP] Check Pods Manifest.lock */,
+				2116B49721C23F17007C9DAF /* Sources */,
+				2116B49821C23F17007C9DAF /* Frameworks */,
+				2116B49921C23F17007C9DAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RFRuntimeDemo;
+			productName = RFRuntimeDemo;
+			productReference = 2116B49B21C23F17007C9DAF /* RFRuntimeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2116B4B521C23F20007C9DAF /* RFRuntimeDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2116B4CD21C23F20007C9DAF /* Build configuration list for PBXNativeTarget "RFRuntimeDemoTests" */;
+			buildPhases = (
+				2116B4B221C23F20007C9DAF /* Sources */,
+				2116B4B321C23F20007C9DAF /* Frameworks */,
+				2116B4B421C23F20007C9DAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2116B4B821C23F20007C9DAF /* PBXTargetDependency */,
+			);
+			name = RFRuntimeDemoTests;
+			productName = RFRuntimeDemoTests;
+			productReference = 2116B4B621C23F20007C9DAF /* RFRuntimeDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2116B4C021C23F20007C9DAF /* RFRuntimeDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2116B4D021C23F20007C9DAF /* Build configuration list for PBXNativeTarget "RFRuntimeDemoUITests" */;
+			buildPhases = (
+				2116B4BD21C23F20007C9DAF /* Sources */,
+				2116B4BE21C23F20007C9DAF /* Frameworks */,
+				2116B4BF21C23F20007C9DAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2116B4C321C23F20007C9DAF /* PBXTargetDependency */,
+			);
+			name = RFRuntimeDemoUITests;
+			productName = RFRuntimeDemoUITests;
+			productReference = 2116B4C121C23F20007C9DAF /* RFRuntimeDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2116B49321C23F17007C9DAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = riceFun;
+				TargetAttributes = {
+					2116B49A21C23F17007C9DAF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2116B4B521C23F20007C9DAF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2116B49A21C23F17007C9DAF;
+					};
+					2116B4C021C23F20007C9DAF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2116B49A21C23F17007C9DAF;
+					};
+				};
+			};
+			buildConfigurationList = 2116B49621C23F17007C9DAF /* Build configuration list for PBXProject "RFRuntimeDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2116B49221C23F17007C9DAF;
+			productRefGroup = 2116B49C21C23F17007C9DAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2116B49A21C23F17007C9DAF /* RFRuntimeDemo */,
+				2116B4B521C23F20007C9DAF /* RFRuntimeDemoTests */,
+				2116B4C021C23F20007C9DAF /* RFRuntimeDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2116B49921C23F17007C9DAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2116B4AE21C23F20007C9DAF /* LaunchScreen.storyboard in Resources */,
+				2116B4AB21C23F20007C9DAF /* Assets.xcassets in Resources */,
+				2116B4A621C23F17007C9DAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2116B4B421C23F20007C9DAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2116B4BF21C23F20007C9DAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20E7952F5DEBB1412951A2BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RFRuntimeDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2116B49721C23F17007C9DAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C69A4021C7AF8800499D3C /* Dog.m in Sources */,
+				21C69A3221C78E9F00499D3C /* ProtocolViewController.m in Sources */,
+				21C69A2E21C789F400499D3C /* Class_copyMethodListViewController.m in Sources */,
+				21C69A3D21C7AB5400499D3C /* IvarLayout_WeakIvarLayoutViewController.m in Sources */,
+				2116B4FD21C39C58007C9DAF /* Son.m in Sources */,
+				2116B4F621C39506007C9DAF /* Objc_getClassList_copyClassListViewController.m in Sources */,
+				2116B4EC21C384D4007C9DAF /* Object_setIvarViewController.m in Sources */,
+				2116B50421C3AA9F007C9DAF /* SelectorViewController.m in Sources */,
+				2116B4E421C34A4E007C9DAF /* Pig.m in Sources */,
+				2116B50021C39F88007C9DAF /* LittlePerson.m in Sources */,
+				2116B4EF21C389AC007C9DAF /* Person.m in Sources */,
+				2116B4FA21C39962007C9DAF /* Class_getInstanceSizeViewController.m in Sources */,
+				2116B4A321C23F17007C9DAF /* ViewController.m in Sources */,
+				2116B4E821C3781F007C9DAF /* ComplexFuncSetsViewController.m in Sources */,
+				2116B4A921C23F17007C9DAF /* RFRuntimeDemo.xcdatamodeld in Sources */,
+				21C69A3521C7949A00499D3C /* RFTableViewController.m in Sources */,
+				2116B4B121C23F20007C9DAF /* main.m in Sources */,
+				2116B4DC21C24B93007C9DAF /* Animal.m in Sources */,
+				2116B4A021C23F17007C9DAF /* AppDelegate.m in Sources */,
+				2116B4D921C24050007C9DAF /* ObjcGetSetClassViewController.m in Sources */,
+				2116B4E121C3423C007C9DAF /* SimpleFunctionSetsViewController.m in Sources */,
+				21C69A3921C79BEF00499D3C /* PropertyViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2116B4B221C23F20007C9DAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2116B4BB21C23F20007C9DAF /* RFRuntimeDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2116B4BD21C23F20007C9DAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2116B4C621C23F20007C9DAF /* RFRuntimeDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2116B4B821C23F20007C9DAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2116B49A21C23F17007C9DAF /* RFRuntimeDemo */;
+			targetProxy = 2116B4B721C23F20007C9DAF /* PBXContainerItemProxy */;
+		};
+		2116B4C321C23F20007C9DAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2116B49A21C23F17007C9DAF /* RFRuntimeDemo */;
+			targetProxy = 2116B4C221C23F20007C9DAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2116B4A421C23F17007C9DAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2116B4A521C23F17007C9DAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2116B4AC21C23F20007C9DAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2116B4AD21C23F20007C9DAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2116B4C821C23F20007C9DAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2116B4C921C23F20007C9DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2116B4CB21C23F20007C9DAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE70DCC96C39FA1CEB9AF83F /* Pods-RFRuntimeDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM6D7482ZM;
+				INFOPLIST_FILE = RFRuntimeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = riceFun.RFKVODemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2116B4CC21C23F20007C9DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86DB16F0D54D4F273B464539 /* Pods-RFRuntimeDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM6D7482ZM;
+				INFOPLIST_FILE = RFRuntimeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = riceFun.RFKVODemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2116B4CE21C23F20007C9DAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM6D7482ZM;
+				INFOPLIST_FILE = RFRuntimeDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = riceFun.RFRuntimeDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFRuntimeDemo.app/RFRuntimeDemo";
+			};
+			name = Debug;
+		};
+		2116B4CF21C23F20007C9DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM6D7482ZM;
+				INFOPLIST_FILE = RFRuntimeDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = riceFun.RFRuntimeDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFRuntimeDemo.app/RFRuntimeDemo";
+			};
+			name = Release;
+		};
+		2116B4D121C23F20007C9DAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM6D7482ZM;
+				INFOPLIST_FILE = RFRuntimeDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = riceFun.RFRuntimeDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RFRuntimeDemo;
+			};
+			name = Debug;
+		};
+		2116B4D221C23F20007C9DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM6D7482ZM;
+				INFOPLIST_FILE = RFRuntimeDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = riceFun.RFRuntimeDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RFRuntimeDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2116B49621C23F17007C9DAF /* Build configuration list for PBXProject "RFRuntimeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2116B4C821C23F20007C9DAF /* Debug */,
+				2116B4C921C23F20007C9DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2116B4CA21C23F20007C9DAF /* Build configuration list for PBXNativeTarget "RFRuntimeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2116B4CB21C23F20007C9DAF /* Debug */,
+				2116B4CC21C23F20007C9DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2116B4CD21C23F20007C9DAF /* Build configuration list for PBXNativeTarget "RFRuntimeDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2116B4CE21C23F20007C9DAF /* Debug */,
+				2116B4CF21C23F20007C9DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2116B4D021C23F20007C9DAF /* Build configuration list for PBXNativeTarget "RFRuntimeDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2116B4D121C23F20007C9DAF /* Debug */,
+				2116B4D221C23F20007C9DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2116B4A721C23F17007C9DAF /* RFRuntimeDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2116B4A821C23F17007C9DAF /* RFRuntimeDemo.xcdatamodel */,
+			);
+			currentVersion = 2116B4A821C23F17007C9DAF /* RFRuntimeDemo.xcdatamodel */;
+			path = RFRuntimeDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2116B49321C23F17007C9DAF /* Project object */;
+}

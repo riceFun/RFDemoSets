@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:RFMVC_MVP_MVVM/RFMVC_MVP_MVVM.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RFRunLoopDemo/RFRunLoopDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RFRuntimeDemo/RFRuntimeDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RFKVODemo2/RFKVODemo2.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RFKVODemo/RFKVODemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RFDebugCategoryDemo/RFDebugCategoryDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

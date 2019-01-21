@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21D5542C21BA428A00CDA8B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D5542B21BA428A00CDA8B8 /* AppDelegate.m */; };
+		21D5542F21BA428A00CDA8B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D5542E21BA428A00CDA8B8 /* ViewController.m */; };
+		21D5543221BA428A00CDA8B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21D5543021BA428A00CDA8B8 /* Main.storyboard */; };
+		21D5543521BA428A00CDA8B8 /* RFKVODemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21D5543321BA428A00CDA8B8 /* RFKVODemo.xcdatamodeld */; };
+		21D5543721BA428B00CDA8B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21D5543621BA428B00CDA8B8 /* Assets.xcassets */; };
+		21D5543A21BA428B00CDA8B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21D5543821BA428B00CDA8B8 /* LaunchScreen.storyboard */; };
+		21D5543D21BA428B00CDA8B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D5543C21BA428B00CDA8B8 /* main.m */; };
+		21D5544721BA428B00CDA8B8 /* RFKVODemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D5544621BA428B00CDA8B8 /* RFKVODemoTests.m */; };
+		21D5545221BA428B00CDA8B8 /* RFKVODemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D5545121BA428B00CDA8B8 /* RFKVODemoUITests.m */; };
+		21D554A221BA5ECE00CDA8B8 /* KVO_Objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D554A121BA5ECE00CDA8B8 /* KVO_Objc.m */; };
+		21D554A521BA6B3400CDA8B8 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D554A421BA6B3400CDA8B8 /* JRSwizzle.m */; };
+		DD11D3283EB12DA8F70D715A /* libPods-RFKVODemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E224B623B61537F7865B807 /* libPods-RFKVODemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21D5544321BA428B00CDA8B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21D5541F21BA428A00CDA8B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21D5542621BA428A00CDA8B8;
+			remoteInfo = RFKVODemo;
+		};
+		21D5544E21BA428B00CDA8B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21D5541F21BA428A00CDA8B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21D5542621BA428A00CDA8B8;
+			remoteInfo = RFKVODemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08057A30DDF59CBF02CABED8 /* Pods-RFKVODemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFKVODemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-RFKVODemo/Pods-RFKVODemo.debug.xcconfig"; sourceTree = "<group>"; };
+		21D5542721BA428A00CDA8B8 /* RFKVODemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFKVODemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D5542A21BA428A00CDA8B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		21D5542B21BA428A00CDA8B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		21D5542D21BA428A00CDA8B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		21D5542E21BA428A00CDA8B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		21D5543121BA428A00CDA8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21D5543421BA428A00CDA8B8 /* RFKVODemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RFKVODemo.xcdatamodel; sourceTree = "<group>"; };
+		21D5543621BA428B00CDA8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21D5543921BA428B00CDA8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21D5543B21BA428B00CDA8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21D5543C21BA428B00CDA8B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21D5544221BA428B00CDA8B8 /* RFKVODemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFKVODemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D5544621BA428B00CDA8B8 /* RFKVODemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFKVODemoTests.m; sourceTree = "<group>"; };
+		21D5544821BA428B00CDA8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21D5544D21BA428B00CDA8B8 /* RFKVODemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFKVODemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D5545121BA428B00CDA8B8 /* RFKVODemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFKVODemoUITests.m; sourceTree = "<group>"; };
+		21D5545321BA428B00CDA8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21D554A021BA5ECE00CDA8B8 /* KVO_Objc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVO_Objc.h; sourceTree = "<group>"; };
+		21D554A121BA5ECE00CDA8B8 /* KVO_Objc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVO_Objc.m; sourceTree = "<group>"; };
+		21D554A321BA6B3400CDA8B8 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		21D554A421BA6B3400CDA8B8 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		2E224B623B61537F7865B807 /* libPods-RFKVODemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RFKVODemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD751850B31DDB5B3AED0221 /* Pods-RFKVODemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RFKVODemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-RFKVODemo/Pods-RFKVODemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21D5542421BA428A00CDA8B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD11D3283EB12DA8F70D715A /* libPods-RFKVODemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21D5543F21BA428B00CDA8B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21D5544A21BA428B00CDA8B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21D5541E21BA428A00CDA8B8 = {
+			isa = PBXGroup;
+			children = (
+				21D5542921BA428A00CDA8B8 /* RFKVODemo */,
+				21D5544521BA428B00CDA8B8 /* RFKVODemoTests */,
+				21D5545021BA428B00CDA8B8 /* RFKVODemoUITests */,
+				21D5542821BA428A00CDA8B8 /* Products */,
+				704D821EEA5642B8BA6ACA8D /* Pods */,
+				3E1A3A45EC5F7E4C0414B8E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		21D5542821BA428A00CDA8B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21D5542721BA428A00CDA8B8 /* RFKVODemo.app */,
+				21D5544221BA428B00CDA8B8 /* RFKVODemoTests.xctest */,
+				21D5544D21BA428B00CDA8B8 /* RFKVODemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21D5542921BA428A00CDA8B8 /* RFKVODemo */ = {
+			isa = PBXGroup;
+			children = (
+				21D554A321BA6B3400CDA8B8 /* JRSwizzle.h */,
+				21D554A421BA6B3400CDA8B8 /* JRSwizzle.m */,
+				21D5542A21BA428A00CDA8B8 /* AppDelegate.h */,
+				21D5542B21BA428A00CDA8B8 /* AppDelegate.m */,
+				21D5542D21BA428A00CDA8B8 /* ViewController.h */,
+				21D5542E21BA428A00CDA8B8 /* ViewController.m */,
+				21D554A021BA5ECE00CDA8B8 /* KVO_Objc.h */,
+				21D554A121BA5ECE00CDA8B8 /* KVO_Objc.m */,
+				21D5543021BA428A00CDA8B8 /* Main.storyboard */,
+				21D5543621BA428B00CDA8B8 /* Assets.xcassets */,
+				21D5543821BA428B00CDA8B8 /* LaunchScreen.storyboard */,
+				21D5543B21BA428B00CDA8B8 /* Info.plist */,
+				21D5543C21BA428B00CDA8B8 /* main.m */,
+				21D5543321BA428A00CDA8B8 /* RFKVODemo.xcdatamodeld */,
+			);
+			path = RFKVODemo;
+			sourceTree = "<group>";
+		};
+		21D5544521BA428B00CDA8B8 /* RFKVODemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				21D5544621BA428B00CDA8B8 /* RFKVODemoTests.m */,
+				21D5544821BA428B00CDA8B8 /* Info.plist */,
+			);
+			path = RFKVODemoTests;
+			sourceTree = "<group>";
+		};
+		21D5545021BA428B00CDA8B8 /* RFKVODemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21D5545121BA428B00CDA8B8 /* RFKVODemoUITests.m */,
+				21D5545321BA428B00CDA8B8 /* Info.plist */,
+			);
+			path = RFKVODemoUITests;
+			sourceTree = "<group>";
+		};
+		3E1A3A45EC5F7E4C0414B8E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E224B623B61537F7865B807 /* libPods-RFKVODemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		704D821EEA5642B8BA6ACA8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08057A30DDF59CBF02CABED8 /* Pods-RFKVODemo.debug.xcconfig */,
+				CD751850B31DDB5B3AED0221 /* Pods-RFKVODemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21D5542621BA428A00CDA8B8 /* RFKVODemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21D5545621BA428B00CDA8B8 /* Build configuration list for PBXNativeTarget "RFKVODemo" */;
+			buildPhases = (
+				0623B6DABB710D65D0DAD4D4 /* [CP] Check Pods Manifest.lock */,
+				21D5542321BA428A00CDA8B8 /* Sources */,
+				21D5542421BA428A00CDA8B8 /* Frameworks */,
+				21D5542521BA428A00CDA8B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RFKVODemo;
+			productName = RFKVODemo;
+			productReference = 21D5542721BA428A00CDA8B8 /* RFKVODemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21D5544121BA428B00CDA8B8 /* RFKVODemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21D5545921BA428B00CDA8B8 /* Build configuration list for PBXNativeTarget "RFKVODemoTests" */;
+			buildPhases = (
+				21D5543E21BA428B00CDA8B8 /* Sources */,
+				21D5543F21BA428B00CDA8B8 /* Frameworks */,
+				21D5544021BA428B00CDA8B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21D5544421BA428B00CDA8B8 /* PBXTargetDependency */,
+			);
+			name = RFKVODemoTests;
+			productName = RFKVODemoTests;
+			productReference = 21D5544221BA428B00CDA8B8 /* RFKVODemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21D5544C21BA428B00CDA8B8 /* RFKVODemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21D5545C21BA428B00CDA8B8 /* Build configuration list for PBXNativeTarget "RFKVODemoUITests" */;
+			buildPhases = (
+				21D5544921BA428B00CDA8B8 /* Sources */,
+				21D5544A21BA428B00CDA8B8 /* Frameworks */,
+				21D5544B21BA428B00CDA8B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21D5544F21BA428B00CDA8B8 /* PBXTargetDependency */,
+			);
+			name = RFKVODemoUITests;
+			productName = RFKVODemoUITests;
+			productReference = 21D5544D21BA428B00CDA8B8 /* RFKVODemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21D5541F21BA428A00CDA8B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = riceFun;
+				TargetAttributes = {
+					21D5542621BA428A00CDA8B8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					21D5544121BA428B00CDA8B8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 21D5542621BA428A00CDA8B8;
+					};
+					21D5544C21BA428B00CDA8B8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 21D5542621BA428A00CDA8B8;
+					};
+				};
+			};
+			buildConfigurationList = 21D5542221BA428A00CDA8B8 /* Build configuration list for PBXProject "RFKVODemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21D5541E21BA428A00CDA8B8;
+			productRefGroup = 21D5542821BA428A00CDA8B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21D5542621BA428A00CDA8B8 /* RFKVODemo */,
+				21D5544121BA428B00CDA8B8 /* RFKVODemoTests */,
+				21D5544C21BA428B00CDA8B8 /* RFKVODemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21D5542521BA428A00CDA8B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D5543A21BA428B00CDA8B8 /* LaunchScreen.storyboard in Resources */,
+				21D5543721BA428B00CDA8B8 /* Assets.xcassets in Resources */,
+				21D5543221BA428A00CDA8B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21D5544021BA428B00CDA8B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21D5544B21BA428B00CDA8B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0623B6DABB710D65D0DAD4D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RFKVODemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21D5542321BA428A00CDA8B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D5542F21BA428A00CDA8B8 /* ViewController.m in Sources */,
+				21D5542C21BA428A00CDA8B8 /* AppDelegate.m in Sources */,
+				21D554A221BA5ECE00CDA8B8 /* KVO_Objc.m in Sources */,
+				21D5543D21BA428B00CDA8B8 /* main.m in Sources */,
+				21D554A521BA6B3400CDA8B8 /* JRSwizzle.m in Sources */,
+				21D5543521BA428A00CDA8B8 /* RFKVODemo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21D5543E21BA428B00CDA8B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D5544721BA428B00CDA8B8 /* RFKVODemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21D5544921BA428B00CDA8B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D5545221BA428B00CDA8B8 /* RFKVODemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21D5544421BA428B00CDA8B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21D5542621BA428A00CDA8B8 /* RFKVODemo */;
+			targetProxy = 21D5544321BA428B00CDA8B8 /* PBXContainerItemProxy */;
+		};
+		21D5544F21BA428B00CDA8B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21D5542621BA428A00CDA8B8 /* RFKVODemo */;
+			targetProxy = 21D5544E21BA428B00CDA8B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21D5543021BA428A00CDA8B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21D5543121BA428A00CDA8B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21D5543821BA428B00CDA8B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21D5543921BA428B00CDA8B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21D5545421BA428B00CDA8B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21D5545521BA428B00CDA8B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21D5545721BA428B00CDA8B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08057A30DDF59CBF02CABED8 /* Pods-RFKVODemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM6D7482ZM;
+				INFOPLIST_FILE = RFKVODemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = riceFun.RFKVODemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21D5545821BA428B00CDA8B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD751850B31DDB5B3AED0221 /* Pods-RFKVODemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM6D7482ZM;
+				INFOPLIST_FILE = RFKVODemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = riceFun.RFKVODemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		21D5545A21BA428B00CDA8B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM6D7482ZM;
+				INFOPLIST_FILE = RFKVODemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = riceFun.RFKVODemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFKVODemo.app/RFKVODemo";
+			};
+			name = Debug;
+		};
+		21D5545B21BA428B00CDA8B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM6D7482ZM;
+				INFOPLIST_FILE = RFKVODemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = riceFun.RFKVODemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFKVODemo.app/RFKVODemo";
+			};
+			name = Release;
+		};
+		21D5545D21BA428B00CDA8B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM6D7482ZM;
+				INFOPLIST_FILE = RFKVODemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = riceFun.RFKVODemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RFKVODemo;
+			};
+			name = Debug;
+		};
+		21D5545E21BA428B00CDA8B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM6D7482ZM;
+				INFOPLIST_FILE = RFKVODemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = riceFun.RFKVODemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RFKVODemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21D5542221BA428A00CDA8B8 /* Build configuration list for PBXProject "RFKVODemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21D5545421BA428B00CDA8B8 /* Debug */,
+				21D5545521BA428B00CDA8B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21D5545621BA428B00CDA8B8 /* Build configuration list for PBXNativeTarget "RFKVODemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21D5545721BA428B00CDA8B8 /* Debug */,
+				21D5545821BA428B00CDA8B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21D5545921BA428B00CDA8B8 /* Build configuration list for PBXNativeTarget "RFKVODemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21D5545A21BA428B00CDA8B8 /* Debug */,
+				21D5545B21BA428B00CDA8B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21D5545C21BA428B00CDA8B8 /* Build configuration list for PBXNativeTarget "RFKVODemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21D5545D21BA428B00CDA8B8 /* Debug */,
+				21D5545E21BA428B00CDA8B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		21D5543321BA428A00CDA8B8 /* RFKVODemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				21D5543421BA428A00CDA8B8 /* RFKVODemo.xcdatamodel */,
+			);
+			currentVersion = 21D5543421BA428A00CDA8B8 /* RFKVODemo.xcdatamodel */;
+			path = RFKVODemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 21D5541F21BA428A00CDA8B8 /* Project object */;
+}
