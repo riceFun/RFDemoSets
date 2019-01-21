@@ -1,9 +1,9 @@
 //
 //  AppDelegate.m
-//  RFKVODemo
+//  NotificationForever
 //
-//  Created by riceFun on 2018/12/7.
-//  Copyright © 2018 riceFun. All rights reserved.
+//  Created by riceFun on 2019/1/21.
+//  Copyright © 2019 riceFun. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -14,7 +14,7 @@
 
 @implementation AppDelegate
 
-//git testddd
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
@@ -58,7 +58,7 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"RFKVODemo"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"NotificationForever"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.

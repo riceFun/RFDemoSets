@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NotificationForever/NotificationForever.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:RFMVC_MVP_MVVM/RFMVC_MVP_MVVM.xcodeproj">
    </FileRef>
    <FileRef
