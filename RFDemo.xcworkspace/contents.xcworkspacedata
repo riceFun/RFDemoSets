@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:FastCalculateBoundRectDemo/FastCalculateBoundRectDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NotificationForever/NotificationForever.xcodeproj">
    </FileRef>
    <FileRef

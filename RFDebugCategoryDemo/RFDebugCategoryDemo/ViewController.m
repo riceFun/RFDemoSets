@@ -78,6 +78,8 @@
     [DebugCategoryManager get_object_methodListWith:@"__NSArrayI"];
     
 }
+- (IBAction)sendNotification:(id)sender {
+}
 
 -(void)kkk{
     

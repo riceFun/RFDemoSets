@@ -37,6 +37,8 @@
     [Dog drink];
     
 }
+- (IBAction)sendNotification:(id)sender {
+}
 
 
 @end
