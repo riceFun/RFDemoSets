@@ -8,13 +8,19 @@
 
 #import "RFStringCalculateManager.h"
 
+#define Lock() dispatch_semaphore_wait(self->_lock, DISPATCH_TIME_FOREVER)
+#define Unlock() dispatch_semaphore_signal(self->_lock)
+
 @interface RFStringCalculateManager ()
 @property (nonatomic,strong) NSMutableDictionary *fontDictionary;
 @property (nonatomic,assign) NSUInteger numsNeedToSave;
 
 @end
 
-@implementation RFStringCalculateManager
+@implementation RFStringCalculateManager{
+    dispatch_semaphore_t _lock;
+    dispatch_queue_t _queue;
+}
 +(instancetype)sharedInstance{
     static RFStringCalculateManager *manager = nil;
     static dispatch_once_t onceToken;
@@ -26,6 +32,8 @@
 
 -(instancetype)init{
     if (self = [super init]) {
+        _lock = dispatch_semaphore_create(1);
+        _queue = dispatch_queue_create("com.RFStringCalculateManager.queue", DISPATCH_QUEUE_CONCURRENT);
         [self readFontDictionaryFromDisk];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveFontDictionaryToDisk) name:UIApplicationDidEnterBackgroundNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveFontDictionaryToDisk) name:UIApplicationWillTerminateNotification object:nil];
@@ -176,9 +184,9 @@
         return;
     }
     self.numsNeedToSave = 0;
-    
-    dispatch_queue_t queue = dispatch_queue_create("com.RFStringCalculateManager.queue", NULL);
-    dispatch_async(queue, ^{//异步串行队列  防止多线程同时写入造成冲突
+    __weak typeof(self) _self = self;
+    dispatch_async(_queue, ^{
+        __strong typeof(_self) self = _self;
         NSData *data;
         NSError *error;
         if (@available(iOS 11.0, *)) {
@@ -190,12 +198,18 @@
         if (error) {
             NSLog(@"font_dictionary json to data 失败 %@",error);
         }
-        NSError *writeError;
-//        BOOL isSuccess = [data writeToURL:[self fileUrl] options:0 error:&writeError];
+        
+        Lock();
         BOOL isSuccess = [data writeToURL:[self fileUrl] atomically:YES];
-        if (writeError) {
-            NSLog(@"font_dictionary存储失败error :%@",writeError);
-        }
+        Unlock();
+        
+//        NSError *writeError;
+//        Lock();
+//        BOOL isSuccess = [data writeToURL:[self fileUrl] options:0 error:&writeError];
+//        Unlock();
+//        if (writeError) {
+//            NSLog(@"font_dictionary存储失败error :%@",writeError);
+//        }
         
         if (!isSuccess) {
             NSLog(@"font_dictionary存储失败");

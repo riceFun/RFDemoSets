@@ -17,6 +17,7 @@
 		2152EA0621F6E2DE0028D760 /* FastCalculateBoundRectDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2152EA0521F6E2DE0028D760 /* FastCalculateBoundRectDemoTests.m */; };
 		2152EA1121F6E2DF0028D760 /* FastCalculateBoundRectDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2152EA1021F6E2DF0028D760 /* FastCalculateBoundRectDemoUITests.m */; };
 		2152EA2021F6E3180028D760 /* RFStringCalculateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2152EA1F21F6E3180028D760 /* RFStringCalculateManager.m */; };
+		42E866B5198A6A47C3E80E99 /* libPods-FastCalculateBoundRectDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A9C4BED590C9EE92242146 /* libPods-FastCalculateBoundRectDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,9 @@
 		2152EA1221F6E2DF0028D760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2152EA1E21F6E3180028D760 /* RFStringCalculateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFStringCalculateManager.h; sourceTree = "<group>"; };
 		2152EA1F21F6E3180028D760 /* RFStringCalculateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFStringCalculateManager.m; sourceTree = "<group>"; };
+		29A9C4BED590C9EE92242146 /* libPods-FastCalculateBoundRectDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastCalculateBoundRectDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB586A20971D349F64CAF70 /* Pods-FastCalculateBoundRectDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCalculateBoundRectDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-FastCalculateBoundRectDemo/Pods-FastCalculateBoundRectDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		42DE3D10D8057303711BEF28 /* Pods-FastCalculateBoundRectDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastCalculateBoundRectDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-FastCalculateBoundRectDemo/Pods-FastCalculateBoundRectDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E866B5198A6A47C3E80E99 /* libPods-FastCalculateBoundRectDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1746EB763DB3638B5485E275 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29A9C4BED590C9EE92242146 /* libPods-FastCalculateBoundRectDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2152E9DD21F6E2D60028D760 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +103,8 @@
 				2152EA0421F6E2DE0028D760 /* FastCalculateBoundRectDemoTests */,
 				2152EA0F21F6E2DF0028D760 /* FastCalculateBoundRectDemoUITests */,
 				2152E9E721F6E2D60028D760 /* Products */,
+				3A29D8CD1C2F0556479909C0 /* Pods */,
+				1746EB763DB3638B5485E275 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +155,15 @@
 			path = FastCalculateBoundRectDemoUITests;
 			sourceTree = "<group>";
 		};
+		3A29D8CD1C2F0556479909C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BB586A20971D349F64CAF70 /* Pods-FastCalculateBoundRectDemo.debug.xcconfig */,
+				42DE3D10D8057303711BEF28 /* Pods-FastCalculateBoundRectDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +171,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2152EA1521F6E2DF0028D760 /* Build configuration list for PBXNativeTarget "FastCalculateBoundRectDemo" */;
 			buildPhases = (
+				89BE8199B40D58E840048CD6 /* [CP] Check Pods Manifest.lock */,
 				2152E9E221F6E2D60028D760 /* Sources */,
 				2152E9E321F6E2D60028D760 /* Frameworks */,
 				2152E9E421F6E2D60028D760 /* Resources */,
@@ -264,6 +289,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89BE8199B40D58E840048CD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FastCalculateBoundRectDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2152E9E221F6E2D60028D760 /* Sources */ = {
@@ -443,15 +489,13 @@
 		};
 		2152EA1621F6E2DF0028D760 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BB586A20971D349F64CAF70 /* Pods-FastCalculateBoundRectDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TM6D7482ZM;
 				INFOPLIST_FILE = FastCalculateBoundRectDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riceFun.RFMVC-MVP-MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,15 +504,13 @@
 		};
 		2152EA1721F6E2DF0028D760 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42DE3D10D8057303711BEF28 /* Pods-FastCalculateBoundRectDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TM6D7482ZM;
 				INFOPLIST_FILE = FastCalculateBoundRectDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "riceFun.RFMVC-MVP-MVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -482,11 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TM6D7482ZM;
 				INFOPLIST_FILE = FastCalculateBoundRectDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = riceFun.FastCalculateBoundRectDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,11 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TM6D7482ZM;
 				INFOPLIST_FILE = FastCalculateBoundRectDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = riceFun.FastCalculateBoundRectDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -519,11 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TM6D7482ZM;
 				INFOPLIST_FILE = FastCalculateBoundRectDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = riceFun.FastCalculateBoundRectDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -537,11 +567,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TM6D7482ZM;
 				INFOPLIST_FILE = FastCalculateBoundRectDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = riceFun.FastCalculateBoundRectDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

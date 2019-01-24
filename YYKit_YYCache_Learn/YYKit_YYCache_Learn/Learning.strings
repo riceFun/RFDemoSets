@@ -1,0 +1,125 @@
+/* 
+  File.strings
+  YYKit_YYCache_Learn
+
+  Created by riceFun on 2019/1/24.
+  Copyright © 2019 riceFun. All rights reserved.
+*/
+
+
+/*
+ 
+ 1.  @package  只能用于本框架
+ eg：
+ @interface Father_Object : NSObject{
+ 
+     // 女儿的名字
+ 
+     @public      // 实例变量可以被在任何地方访问。
+     NSString * GrilName;
+ 
+     // 女儿的年龄
+     @protected   //实例变量能被声明它的本类和子类访问，所有没有显式制定范围的实例变量都是@protected
+     int  GrilAge;
+ 
+     // 女儿的体重
+     @private     //实例变量只能被声明它的类访问
+     float GrilWeight;
+ 
+     // 女儿的身高
+     @package     //只能用于本框架，其他的都不能访问
+     float GrilHeight;
+ }
+ 
+ 2.  (__bridge <#type#>)<#expression#>
+     (__bridge_retained <#CF type#>)<#expression#>
+     (__bridge_transfer <#Objective-C type#>)<#expression#>)
+ 
+ https://www.jianshu.com/p/11c3bc21f56e
+ __bridge 用于OC指针 to C指针的转换，不做任何操作
+ eg：
+ void *p;
+ NSObject *obj = [NSObject alloc]init];
+ p = (__bridge void*)obj;//void *p 指针直接指向了 NSObject *objc 这个 OC 类
+
+// p 指针并不拥有 OC 对象，跟普通的指针指向地址无疑。所以这个出现了一个问题，OC 对象被释放，p 指针也就 Gameover 了。
+
+
+__bridge_retained 用于OC指针 to C指针 的转换，并且也拥有着被转换对象的所有权
+ PS：常用在将OC对象转化成CF对象，且OC对象的所有权也交给CF对象来管理，即OC对象转化成CF对象时，涉及到对象类型和对象所有权的转化，作用同CFBridgingRetain()
+ 
+ eg:
+ @interface ABSClass : NSObject
+ @property (nonatomic, copy) NSString *name;
+ @end
+ @implementation ABSClass
+ @end
+ 
+ int main(int argc, char * argv[]) {
+     @autoreleasepool {
+ 
+     void *p;
+         {//增加作用域
+             ABSClass *objc = [[ABSClass alloc]init];
+             objc.name = @"我们";
+             p = (__bridge_retained void*)objc;// oc ->  c  __bridge_retained 就相当于 MRC 下的 retain ，将内存计数器 +1，然后用 void *p 指向改内存，所以当 *objc过了作用域，引用计算器 -1，也并没有释放 void *p 所引用的内存。
+         }
+         NSLog(@"%@", [(__bridge ABSClass *)p name]); //c -> oc
+         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+     }
+ }
+ 
+ 
+ __bridge_transfer:用于C指针 to OC指针 并在拥有对象所有权后将原先对象所有权释放。  与 __bridge_retained 相反
+ PS：常用在CF对象转化成OC对象时，将CF对象的所有权交给OC对象，此时ARC就能自动管理该内存,作用同CFBridgingRelease()
+ // p 变量原先持有对象的所有权
+ eg：
+ MRC
+ id obj = (id)p;
+ [obj retain];
+ [(id)p release];
+ 
+ 
+ ARC
+ id obj = (__bridge_transfer id)p;
+ 
+ 
+ 3.
+ 信号量锁 和 异步并发线程
+#define Lock() dispatch_semaphore_wait(self->_lock, DISPATCH_TIME_FOREVER)
+#define Unlock() dispatch_semaphore_signal(self->_lock)
+ eg：
+ @implementation YYDiskCache {
+     dispatch_semaphore_t _lock;
+     dispatch_queue_t _queue;
+ }
+ 
+ - (instancetype)init {
+     self = [super init];
+ 
+     _lock = dispatch_semaphore_create(1);
+     _queue = dispatch_queue_create("com.ibireme.cache.disk", DISPATCH_QUEUE_CONCURRENT);
+
+     return self;
+ }
+ 
+ - (void)saveData {
+     __weak typeof(self) _self = self;
+     dispatch_async(_queue, ^{
+         __strong typeof(_self) self = _self;
+         if (!self) return;
+         Lock();
+ 
+         [self saveData：data];
+ 
+         Unlock();
+     });
+ }
+ 
+ 
+ 
+ */
+
+
+
+

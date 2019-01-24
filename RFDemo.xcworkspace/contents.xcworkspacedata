@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:YYKit_YYCache_Learn/YYKit_YYCache_Learn.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:FastCalculateBoundRectDemo/FastCalculateBoundRectDemo.xcodeproj">
    </FileRef>
    <FileRef

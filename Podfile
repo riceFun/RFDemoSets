@@ -1,6 +1,6 @@
 # 教程  https://www.jianshu.com/p/e3cfae830985  iOS用workspace和cocoapods管理多个项目
 workspace 'RFDemo.xcworkspace'
-project 'RFDebugCategoryDemo/RFDebugCategoryDemo.xcodeproj'
+#project 'RFDebugCategoryDemo/RFDebugCategoryDemo.xcodeproj'
 
 target 'RFDebugCategoryDemo' do
   platform :ios, '9.0'
@@ -38,6 +38,16 @@ target 'RFMVC_MVP_MVVM' do
     pod 'SVProgressHUD'
     
 end
+
+target 'FastCalculateBoundRectDemo' do
+    platform :ios, '9.0'
+    project 'FastCalculateBoundRectDemo/FastCalculateBoundRectDemo.xcodeproj'
+    pod 'MLeaksFinder'
+    
+end
+
+
+
 
 
 

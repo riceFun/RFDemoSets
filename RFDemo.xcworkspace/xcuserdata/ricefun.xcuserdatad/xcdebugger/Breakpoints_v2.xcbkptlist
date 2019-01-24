@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FastCalculateBoundRectDemo/FastCalculateBoundRectDemo/RFStringCalculateManager.m"
-            timestampString = "569932848.082405"
+            timestampString = "570012530.908259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "-createNewFont:"
             landmarkType = "7">
          </BreakpointContent>
@@ -52,11 +52,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FastCalculateBoundRectDemo/FastCalculateBoundRectDemo/RFStringCalculateManager.m"
-            timestampString = "569932848.082828"
+            timestampString = "570012530.9087369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "-fetchWidthDictionaryWithFont:"
             landmarkType = "7">
          </BreakpointContent>
@@ -68,11 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FastCalculateBoundRectDemo/FastCalculateBoundRectDemo/RFStringCalculateManager.m"
-            timestampString = "569932848.083118"
+            timestampString = "570012530.909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "-calculateTotalWidthString:font:"
             landmarkType = "7">
          </BreakpointContent>
@@ -84,12 +84,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FastCalculateBoundRectDemo/FastCalculateBoundRectDemo/RFStringCalculateManager.m"
-            timestampString = "569932848.083364"
+            timestampString = "570012530.90925"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
             landmarkName = "-readFontDictionaryFromDisk"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/MLeaksFinder/MLeaksFinder/UIViewController+MemoryLeak.m"
+            timestampString = "570012176.970664"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "+load"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
